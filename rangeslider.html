@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link href="css/metro-bootstrap.css" rel="stylesheet">
+    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/iconFont.css" rel="stylesheet">    
+
+    <!-- Load JavaScript Libraries -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery/jquery.widget.min.js"></script>
+    <script src="js/jquery/jquery.mousewheel.js"></script>
+	<script src="js/metro.min.js"></script>
+	<script src="js/metro/metro-slider.js"></script>
+	
+	
+    
+
+</head>
+<body class="metro">
+    
+    <div class="container">
+                
+
+                <div class="">
+                    <br>
+                    <div class="slider" data-role="slider" data-position="20" data-accuracy="0" data-show-hint="true"><div class="complete" style="width: 392.5px;"></div><a class="marker" style="left: 392.5px;"></a><span class="hint" style="left: 382.5px; display: none;">38</span></div>
+                    <br>
+                    <div class="slider permanent-hint" data-role="slider" data-position="70" data-accuracy="0" data-show-hint="true"><div class="complete" style="width: 564.5px;"></div><a class="marker" style="left: 564.5px;"></a><span class="hint" style="left: 554.5px;">55</span></div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="slider hint-bottom" data-role="slider" data-position="20" data-accuracy="0" data-show-hint="true"><div class="complete" style="width: 205.2px;"></div><a class="marker" style="left: 205.2px;"></a><span class="hint" style="left: 195.2px;">20</span></div>
+                    <br>
+                    <div id="s2" class="slider permanent-hint hint-bottom" data-role="slider" data-position="20" data-accuracy="0" data-show-hint="true"><div class="complete" style="width: 205.2px;"></div><a class="marker" style="left: 205.2px;"></a><span class="hint" style="left: 195.2px;">20</span></div>
+                </div>
+				
+				<div class=" clearfix">
+                    <div class="slider vertical place-left" data-role="slider" data-position="20" data-accuracy="0"><div class="complete" style="height: 29.6px;"></div><a class="marker" style="top: 70.4px;"></a></div>
+                    <div class="slider vertical place-left" data-role="slider" data-position="0" data-accuracy="20"><div class="complete" style="height: 12px;"></div><a class="marker" style="top: 88px;"></a></div>
+                    <div class="slider vertical place-left" data-role="slider" data-position="40" data-accuracy="0" data-color="green" style="background-color: green;"><div class="complete" style="height: 47.2px;"></div><a class="marker" style="top: 52.8px;"></a></div>
+                    <div class="slider vertical place-left" data-role="slider" data-position="70" data-accuracy="0" data-color="#f00" style="background-color: rgb(255, 0, 0);"><div class="complete" style="height: 73.6px;"></div><a class="marker" style="top: 26.4px;"></a></div>
+                    <div class="slider vertical place-left" data-role="slider" data-position="70" data-accuracy="0" data-color="black" data-complete-color="blue" data-marker-color="yellow" style="background-color: black;"><div class="complete" style="height: 73.6px; background-color: blue;"></div><a class="marker" style="top: 26.4px; background-color: yellow;"></a></div>
+                    <div class="slider vertical place-left hint-left" data-show-hint="true" data-role="slider" data-position="0" data-accuracy="0" data-colors="blue, red, yellow, green"><div class="complete" style="height: 12px; background-color: blue;"></div><a class="marker" style="top: 88px;"></a><span class="hint" style="top: 78.5px;">0</span></div>
+                    <div class="slider vertical place-left" data-role="slider" data-show-hint="true"><div class="complete" style="height: 12px;"></div><a class="marker" style="top: 88px;"></a><span class="hint" style="top: 78.5px;">0</span></div>
+                    <div class="slider vertical place-left permanent-hint" data-role="slider" data-show-hint="true"><div class="complete" style="height: 12px;"></div><a class="marker" style="top: 88px;"></a><span class="hint" style="top: 78.5px;">0</span></div>
+                </div>
+
+    </div>
+<script>
+$(function(){
+    var slider = $("#slider").slider({
+        position: 10,
+        accuracy: 1
+    });
+});
+ 
+// Short method to set position
+slider.slider('value', 15);
+</script>
+
+</body>
+</html>
